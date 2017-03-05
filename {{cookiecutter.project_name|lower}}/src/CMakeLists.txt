@@ -7,10 +7,10 @@ set({{cookiecutter.exe_name|upper}}_SRCFILES
     "{{cookiecutter.exe_name}}.cpp"
 )
 
-SOURCE_GROUP("Source Files" FILES ${{{cookiecutter.exe_name|upper}}_SRCFILES})
+SOURCE_GROUP("Source Files" FILES {{'${'}}{{cookiecutter.exe_name|upper}}_SRCFILES{{'}'}})
 
 add_executable({{cookiecutter.exe_name}}
-    ${{{cookiecutter.exe_name|upper}}_SRCFILES}
+    {{'${'}}{{cookiecutter.exe_name|upper}}_SRCFILES{{'}'}}
     ${GLOBAL_SRCFILES}
     ${GLOBAL_HDRFILES}
 )
