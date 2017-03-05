@@ -4,7 +4,7 @@
     "author_email": "pwicks86@gmail.com",
 
     "project_name": "new_project",
-    "exe_name": "{{cookiecutter.project_name|lower|replace(" ", "_")}}"
+    "exe_name": "{{cookiecutter.project_name|lower|replace(' ','_')}}",
     "project_version": "0.1.0",
     "project_description": "{{cookiecutter.project_name}}",
     "project_url": "https://github.com/pwicks86/{{cookiecutter.exe_name}}",
